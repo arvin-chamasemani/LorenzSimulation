@@ -7,7 +7,7 @@ The project focuses on simulating the Lorenz attractor system through numerical 
 
 The goal is to explore high-performance scientific visualization within Unreal Engine, combining mathematical simulation, GPU computation, and real-time graphics.
 
-![Lorenz Simulation Overview](media/01-LorenzSimulation.gif)
+![Lorenz Simulation Overview](media/LorenzSimulation.gif)
 
 ## Project Features
 
@@ -17,7 +17,8 @@ The goal is to explore high-performance scientific visualization within Unreal E
 - **Configurable Parameters:** Lorenz system parameters Sigma, Rho, and Beta.
 - **Particle Visualization:** Custom particle appearance, color gradients, opacity, and size controls.
 - **Unreal Engine Integration:** Developed as a modular Unreal Engine plugin.
-![Simulation Parameters](media/LorenzSimulation - Unreal Editor.mp4)
+  
+![Simulation Parameters](media/LorenzSimulation.mp4)
 
 ## Technology Stack
 
