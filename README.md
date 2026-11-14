@@ -28,22 +28,28 @@ The goal is to explore high-performance scientific visualization within Unreal E
 
 ## Mathematical Model
 
-The simulation is based on the Lorenz system:
+The simulation is based on the Lorenz system, a set of three coupled nonlinear differential equations that describe chaotic dynamical behavior.
 
-\[
-\frac{dx}{dt} = \sigma(y-x)
-\]
+The governing equations are:
 
-\[
-\frac{dy}{dt} = x(\rho-z)-y
-\]
+```text
+dx/dt = Sigma * (y - x)
 
-\[
-\frac{dz}{dt} = xy-\beta z
-\]
+dy/dt = x * (Rho - z) - y
 
-These equations produce the characteristic chaotic dynamics known as the Lorenz attractor.
+dz/dt = x * y - Beta * z
+```
 
+### System Parameters
+
+- **x, y, z:** State variables describing the particle position.
+- **Sigma:** Prandtl number.
+- **Rho:** Rayleigh number.
+- **Beta:** Geometric parameter.
+
+The system is numerically integrated using the **fourth-order Runge–Kutta (RK4) method** to calculate particle trajectories over time.
+
+This numerical approach enables real-time GPU-based simulation and visualization of the Lorenz attractor in Unreal Engine 5.
 ## Architecture Overview
 
 The project consists of three primary systems:
@@ -51,12 +57,6 @@ The project consists of three primary systems:
 1. **Simulation System:** Calculates particle trajectories using RK4 integration.
 2. **GPU Resource Management:** Manages particle state buffers and simulation updates.
 3. **Rendering System:** Visualizes the resulting particle positions in Unreal Engine.
-
-## Project Status
-
-The project is under active development.
-
-Planned improvements include expanded runtime controls, dynamic particle management, and additional visualization capabilities.
 
 ## Platform
 
