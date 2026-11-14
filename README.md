@@ -7,7 +7,7 @@ The project focuses on simulating the Lorenz attractor system through numerical 
 
 The goal is to explore high-performance scientific visualization within Unreal Engine, combining mathematical simulation, GPU computation, and real-time graphics.
 
-![Lorenz Simulation Overview](media/LorenzSimulation.gif)
+![Lorenz Simulation Overview](https://github.com/arvin-chamasemani/LorenzSimulation/tree/main/media/LorenzSimulation.gif)
 
 ## Project Features
 
